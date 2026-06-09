@@ -1,53 +1,76 @@
-import { load } from 'cheerio'
-
 const HEADERS = {
   'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
   'Accept-Language': 'de,en;q=0.8',
 }
 
-async function fetchPage(url: string): Promise<string | null> {
+async function fetchHtml(url: string): Promise<string | null> {
   try {
-    const html = await $fetch<string>(url, {
-      responseType: 'text',
-      headers: HEADERS,
-      timeout: 8000,
-    })
-    return typeof html === 'string' ? html : null
+    const res = await fetch(url, { headers: HEADERS, signal: AbortSignal.timeout(8000) })
+    if (!res.ok) return null
+    return await res.text()
   } catch {
     return null
   }
 }
 
-function extractText(html: string): string[] {
-  const $ = load(html)
+function stripTags(html: string): string {
+  return html
+    .replace(/<script[\s\S]*?<\/script>/gi, '')
+    .replace(/<style[\s\S]*?<\/style>/gi, '')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&quot;/g, '"')
+    .replace(/\s{2,}/g, ' ')
+    .trim()
+}
 
-  // Remove clutter
-  $('script, style, noscript, nav, footer, header, aside, [class*="cookie"], [class*="banner"], [id*="cookie"], [id*="banner"], [class*="modal"], iframe, svg').remove()
+function extractMeta(html: string, name: string): string {
+  const m = html.match(new RegExp(`<meta[^>]+(?:name|property)=["']${name}["'][^>]+content=["']([^"']+)["']`, 'i'))
+    || html.match(new RegExp(`<meta[^>]+content=["']([^"']+)["'][^>]+(?:name|property)=["']${name}["']`, 'i'))
+  return m?.[1]?.trim() ?? ''
+}
 
+function extractTitle(html: string): string {
+  return html.match(/<title[^>]*>([^<]+)<\/title>/i)?.[1]?.trim() ?? ''
+}
+
+function extractHeadings(html: string): string[] {
+  const results: string[] = []
+  const re = /<h[1-3][^>]*>([\s\S]*?)<\/h[1-3]>/gi
+  let m
+  while ((m = re.exec(html)) !== null) {
+    const text = stripTags(m[1]).trim()
+    if (text.length > 3 && text.length < 200) results.push(text)
+  }
+  return results
+}
+
+function extractParagraphs(html: string): string[] {
+  const results: string[] = []
+  const re = /<p[^>]*>([\s\S]*?)<\/p>/gi
+  let m
+  while ((m = re.exec(html)) !== null) {
+    const text = stripTags(m[1]).trim()
+    if (text.length > 40 && text.length < 600) results.push(text)
+  }
+  return results
+}
+
+function parseHtml(html: string): string[] {
   const lines: string[] = []
 
-  // Meta
-  const title = $('title').text().trim()
-  if (title) lines.push(`Firmenname / Seitentitel: ${title}`)
+  const title = extractTitle(html)
+  if (title) lines.push(`Seitentitel: ${title}`)
 
-  const metaDesc = $('meta[name="description"]').attr('content')?.trim()
-  if (metaDesc) lines.push(`Kurzbeschreibung: ${metaDesc}`)
+  const desc = extractMeta(html, 'description') || extractMeta(html, 'og:description')
+  if (desc) lines.push(`Beschreibung: ${desc}`)
 
-  const ogDesc = $('meta[property="og:description"]').attr('content')?.trim()
-  if (ogDesc && ogDesc !== metaDesc) lines.push(`Beschreibung: ${ogDesc}`)
-
-  // Headings
-  $('h1, h2, h3').each((_, el) => {
-    const text = $(el).text().replace(/\s+/g, ' ').trim()
-    if (text.length > 3 && text.length < 200) lines.push(text)
-  })
-
-  // Paragraphs & list items
-  $('p, li').each((_, el) => {
-    const text = $(el).text().replace(/\s+/g, ' ').trim()
-    if (text.length > 40 && text.length < 600) lines.push(text)
-  })
+  lines.push(...extractHeadings(html))
+  lines.push(...extractParagraphs(html))
 
   return lines
 }
@@ -56,7 +79,6 @@ export async function scrapeCompany(url: string): Promise<{ text: string; name: 
   const base = new URL(url)
   const origin = base.origin
 
-  // Pages to try in order
   const pageCandidates = [
     url,
     `${origin}/about`,
@@ -64,35 +86,30 @@ export async function scrapeCompany(url: string): Promise<{ text: string; name: 
     `${origin}/ueber-uns`,
     `${origin}/unternehmen`,
     `${origin}/products`,
-    `${origin}/produkte`,
     `${origin}/services`,
-    `${origin}/leistungen`,
   ]
 
   const allLines: string[] = []
   let companyName = base.hostname.replace(/^www\./, '')
-
   let pagesScraped = 0
+
   for (const pageUrl of pageCandidates) {
     if (pagesScraped >= 3) break
-
-    const html = await fetchPage(pageUrl)
+    const html = await fetchHtml(pageUrl)
     if (!html) continue
 
     pagesScraped++
-    const lines = extractText(html)
+    const lines = parseHtml(html)
 
-    // Extract company name from first page title
     if (pagesScraped === 1 && lines[0]) {
-      const titleLine = lines[0].replace('Firmenname / Seitentitel: ', '')
-      // Strip common suffixes like "- Home", "| Home", etc.
-      companyName = titleLine.split(/[-|·–]/)[0].trim() || companyName
+      const raw = lines[0].replace('Seitentitel: ', '')
+      const cleaned = raw.split(/[-|·–]/)[0].trim()
+      if (cleaned) companyName = cleaned
     }
 
     allLines.push(...lines)
   }
 
-  // Deduplicate and join
   const seen = new Set<string>()
   const unique = allLines.filter(l => {
     if (seen.has(l)) return false
@@ -101,8 +118,6 @@ export async function scrapeCompany(url: string): Promise<{ text: string; name: 
   })
 
   const combined = unique.join('\n')
-
-  // Truncate to ~4500 chars to stay within Claude context budget
   return {
     text: combined.length > 4500 ? combined.slice(0, 4500) + '…' : combined,
     name: companyName,

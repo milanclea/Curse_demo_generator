@@ -1,8 +1,6 @@
 export default defineNuxtConfig({
   ssr: false,
-  devtools: { enabled: true },
-
-  buildDir: '/tmp/lc-demo-generator-build',
+  devtools: { enabled: false },
 
   modules: [
     '@nuxt/ui',
@@ -29,6 +27,10 @@ export default defineNuxtConfig({
     authUsername: process.env.AUTH_USERNAME || 'demo',
     authPassword: process.env.AUTH_PASSWORD || 'langenscheidt2024',
     authSecret: process.env.AUTH_SECRET || 'lc-demo-secret-change-in-prod',
+  },
+
+  nitro: {
+    preset: process.env.NITRO_PRESET || 'node-server',
   },
 
   app: {

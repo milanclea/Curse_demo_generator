@@ -1,4 +1,3 @@
-import Anthropic from '@anthropic-ai/sdk'
 import { scrapeCompany } from '../utils/scraper'
 
 const MOCK_COURSES = [
@@ -19,8 +18,8 @@ const MOCK_COURSES = [
     phrasen: [
       { phrase: "Let's get started — today's agenda covers three main points.", translation: 'Fangen wir an — die heutige Tagesordnung umfasst drei Hauptpunkte.' },
       { phrase: 'Could you give us a quick status update on your end?', translation: 'Können Sie uns kurz den aktuellen Stand bei Ihnen mitteilen?' },
-      { phrase: 'I'll send out the meeting minutes by end of day.', translation: 'Ich schicke das Protokoll bis Ende des Tages raus.' },
-      { phrase: 'Let's make sure everyone is aligned on the next steps.', translation: 'Stellen wir sicher, dass alle die nächsten Schritte kennen.' },
+      { phrase: "I'll send out the meeting minutes by end of day.", translation: 'Ich schicke das Protokoll bis Ende des Tages raus.' },
+      { phrase: "Let's make sure everyone is aligned on the next steps.", translation: 'Stellen wir sicher, dass alle die nächsten Schritte kennen.' },
       { phrase: 'Can we table that discussion for our next call?', translation: 'Können wir das Thema auf das nächste Gespräch vertagen?' },
       { phrase: 'Who is going to own this action item?', translation: 'Wer übernimmt die Verantwortung für diese Aufgabe?' },
     ],
@@ -66,7 +65,7 @@ const MOCK_COURSES = [
       { phrase: 'Please find the requested documents attached.', translation: 'Bitte finden Sie die angeforderten Dokumente im Anhang.' },
       { phrase: 'I wanted to follow up on my previous email from last week.', translation: 'Ich wollte wegen meiner letzten E-Mail von vorletzter Woche nachfragen.' },
       { phrase: 'Could you please confirm receipt of this message?', translation: 'Könnten Sie bitte den Empfang dieser Nachricht bestätigen?' },
-      { phrase: 'Please don't hesitate to reach out if you have any questions.', translation: 'Zögern Sie nicht, sich bei Fragen zu melden.' },
+      { phrase: "Please don't hesitate to reach out if you have any questions.", translation: 'Zögern Sie nicht, sich bei Fragen zu melden.' },
       { phrase: 'I look forward to hearing from you.', translation: 'Ich freue mich auf Ihre Rückmeldung.' },
     ],
   },
@@ -85,11 +84,11 @@ const MOCK_COURSES = [
       { term: 'to finalize', translation: 'abschließen / fertigstellen' },
     ],
     phrasen: [
-      { phrase: 'We're prepared to offer a 10% discount for orders above 500 units.', translation: 'Wir sind bereit, bei Bestellungen über 500 Einheiten 10% Rabatt zu gewähren.' },
+      { phrase: "We're prepared to offer a 10% discount for orders above 500 units.", translation: 'Wir sind bereit, bei Bestellungen über 500 Einheiten 10% Rabatt zu gewähren.' },
       { phrase: 'Can we find a middle ground on the delivery timeline?', translation: 'Können wir uns beim Lieferzeitraum auf einen Kompromiss einigen?' },
-      { phrase: 'That's slightly above our budget — is there any flexibility?', translation: 'Das liegt etwas über unserem Budget — gibt es Spielraum?' },
-      { phrase: 'We'd need a written confirmation before we can proceed.', translation: 'Wir benötigen eine schriftliche Bestätigung, bevor wir fortfahren können.' },
-      { phrase: 'Let's agree on the key points and put them in writing.', translation: 'Lass uns die Kernpunkte festlegen und schriftlich festhalten.' },
+      { phrase: "That's slightly above our budget — is there any flexibility?", translation: 'Das liegt etwas über unserem Budget — gibt es Spielraum?' },
+      { phrase: "We'd need a written confirmation before we can proceed.", translation: 'Wir benötigen eine schriftliche Bestätigung, bevor wir fortfahren können.' },
+      { phrase: "Let's agree on the key points and put them in writing.", translation: 'Lass uns die Kernpunkte festlegen und schriftlich festhalten.' },
     ],
   },
   {
@@ -110,8 +109,8 @@ const MOCK_COURSES = [
       { phrase: 'I completely understand your frustration and I sincerely apologize.', translation: 'Ich verstehe Ihre Frustration vollkommen und entschuldige mich aufrichtig.' },
       { phrase: 'Let me look into this right away and get back to you within the hour.', translation: 'Ich kümmere mich sofort darum und melde mich innerhalb einer Stunde.' },
       { phrase: 'We take full responsibility for this and will make it right.', translation: 'Wir übernehmen die volle Verantwortung dafür und werden es in Ordnung bringen.' },
-      { phrase: 'As a goodwill gesture, we'd like to offer you a full refund.', translation: 'Als Kulanzgeste möchten wir Ihnen eine vollständige Erstattung anbieten.' },
-      { phrase: 'We've identified the root cause and put measures in place to prevent this in future.', translation: 'Wir haben die Ursache identifiziert und Maßnahmen ergriffen, um dies künftig zu verhindern.' },
+      { phrase: "As a goodwill gesture, we'd like to offer you a full refund.", translation: 'Als Kulanzgeste möchten wir Ihnen eine vollständige Erstattung anbieten.' },
+      { phrase: "We've identified the root cause and put measures in place to prevent this in future.", translation: 'Wir haben die Ursache identifiziert und Maßnahmen ergriffen, um dies künftig zu verhindern.' },
     ],
   },
 ]
@@ -128,13 +127,9 @@ export default defineEventHandler(async (event) => {
 
   // --- Mock mode: no API key configured ---
   if (!config.anthropicApiKey) {
-    // Still scrape to get company name, but skip generation
-    await new Promise(r => setTimeout(r, 2000)) // simulate delay
+    await new Promise(r => setTimeout(r, 2000))
     let companyName = 'Beispiel GmbH'
-    try {
-      const { name } = await scrapeCompany(url)
-      if (name) companyName = name
-    } catch {}
+    try { companyName = new URL(url).hostname.replace(/^www\./, '') } catch {}
     return { courses: MOCK_COURSES, companyName, isMock: true }
   }
 
@@ -148,6 +143,7 @@ export default defineEventHandler(async (event) => {
     })
   }
 
+  const { default: Anthropic } = await import('@anthropic-ai/sdk')
   const anthropic = new Anthropic({ apiKey: config.anthropicApiKey })
 
   const prompt = `Du bist ein erfahrener Sprachkursdesigner für die Language Coach Plattform von Langenscheidt.
