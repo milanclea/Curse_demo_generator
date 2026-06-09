@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Force light mode — override OS dark mode preference */
+:root {
+  color-scheme: light only;
+}
+html.dark {
+  color-scheme: light !important;
+}
+
 * {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
