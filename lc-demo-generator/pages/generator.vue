@@ -195,12 +195,21 @@ const hasCourses = computed(() => generator.courses.length > 0)
         <!-- Results header -->
         <div class="flex items-center justify-between mb-6">
           <div>
-            <h2 class="text-xl font-bold text-gray-900">
-              5 Kursvorlagen für
-              <span class="text-[#1e3a5f]">{{ generator.companyName }}</span>
-            </h2>
-            <p class="text-sm text-gray-500 mt-0.5">
+            <div class="flex items-center gap-2 mb-1">
+              <h2 class="text-xl font-bold text-gray-900">
+                5 Kursvorlagen für
+                <span class="text-[#1e3a5f]">{{ generator.companyName }}</span>
+              </h2>
+              <span v-if="generator.isMock" class="inline-flex items-center gap-1 text-xs font-medium bg-amber-100 text-amber-700 border border-amber-200 rounded-full px-2.5 py-0.5">
+                <UIcon name="i-heroicons-beaker" class="w-3.5 h-3.5" />
+                Vorschau-Daten
+              </span>
+            </div>
+            <p class="text-sm text-gray-500">
               Zielsprache: {{ generator.language }} · Generiert aus {{ generator.url }}
+            </p>
+            <p v-if="generator.isMock" class="text-xs text-amber-600 mt-0.5">
+              Kein API-Schlüssel gesetzt — es werden Beispieldaten angezeigt. ANTHROPIC_API_KEY in .env eintragen für echte Kurse.
             </p>
           </div>
           <UButton

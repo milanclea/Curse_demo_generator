@@ -27,6 +27,7 @@ interface GeneratorState {
   courses: CourseTemplate[]
   error: string | null
   companyName: string
+  isMock: boolean
 }
 
 const LOADING_STEPS = [
@@ -47,6 +48,7 @@ export const useGeneratorStore = defineStore('generator', {
     courses: [],
     error: null,
     companyName: '',
+    isMock: false,
   }),
 
   actions: {
@@ -67,12 +69,13 @@ export const useGeneratorStore = defineStore('generator', {
       }, 1200)
 
       try {
-        const result = await $fetch<{ courses: CourseTemplate[]; companyName: string }>('/api/generate', {
+        const result = await $fetch<{ courses: CourseTemplate[]; companyName: string; isMock?: boolean }>('/api/generate', {
           method: 'POST',
           body: { url, language },
         })
         this.courses = result.courses
         this.companyName = result.companyName || new URL(url).hostname
+        this.isMock = result.isMock ?? false
         this.url = url
         this.language = language
         this.loadingProgress = 100
@@ -90,6 +93,7 @@ export const useGeneratorStore = defineStore('generator', {
       this.error = null
       this.url = ''
       this.companyName = ''
+      this.isMock = false
     },
   },
 })
