@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Stepper active step underline */
+.step-active {
+  border-bottom: 2px solid #1e3a5f;
+}
+
+/* Score badge variants */
+.score-green {
+  @apply bg-emerald-100 text-emerald-800 border border-emerald-200;
+}
+.score-yellow {
+  @apply bg-amber-100 text-amber-800 border border-amber-200;
+}
+.score-red {
+  @apply bg-rose-100 text-rose-800 border border-rose-200;
+}
+
+/* Drop zone drag-over state */
+.drop-zone-active {
+  @apply border-blue-900 bg-blue-50;
+}
+
+/* Custom scrollbar for sidebar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #d1d5db;
+  border-radius: 2px;
+}
+
+/* Diff highlighting */
+.diff-del {
+  @apply line-through text-rose-500 bg-rose-50;
+}
+.diff-ins {
+  @apply text-emerald-600 bg-emerald-50;
+}
+
+/* Table row hover */
+.segment-row:hover {
+  @apply bg-gray-50;
+}
+
+/* Sidebar icon button */
+.sidebar-icon {
+  @apply flex items-center justify-center w-10 h-10 rounded-lg text-gray-500 hover:bg-gray-100 hover:text-gray-700 cursor-pointer transition-colors;
+}
+.sidebar-icon.active {
+  @apply bg-blue-50 text-blue-900;
+}

@@ -1,0 +1,1267 @@
+{
+  "seg-0001": {
+    "segmentId": "seg-0001",
+    "originalTarget": "He said: \"We'll see each other tomorrow.\"",
+    "improvedTarget": "He said: \"We'll see each other tomorrow.\" (revised)",
+    "rationale": "The noun phrase structure was restructured to improve readability for native English speakers.",
+    "errorCategories": [
+      "Terminology",
+      "Accuracy"
+    ]
+  },
+  "seg-0002": {
+    "segmentId": "seg-0002",
+    "originalTarget": "He replied: \"Yes, I will come.\",",
+    "improvedTarget": "He replied: \"Yes, I will come.\", (revised)",
+    "rationale": "The idiomatic expression was translated too literally; the suggested version uses a natural English equivalent.",
+    "errorCategories": [
+      "Mistranslation"
+    ]
+  },
+  "seg-0003": {
+    "segmentId": "seg-0003",
+    "originalTarget": "A thoughtful reflection on user experience in digital products.",
+    "improvedTarget": "A thoughtful reflection on user experience in digital products. (revised)",
+    "rationale": "Terminology mismatch: 'configuration' should be used instead of 'settings' for consistency with the glossary.",
+    "errorCategories": [
+      "Accuracy"
+    ]
+  },
+  "seg-0004": {
+    "segmentId": "seg-0004",
+    "originalTarget": "Balancing usability and visual appeal is key in design.",
+    "improvedTarget": "Balancing usability and visual appeal is key in design. (revised)",
+    "rationale": "The noun phrase structure was restructured to improve readability for native English speakers.",
+    "errorCategories": [
+      "Terminology",
+      "Fluency",
+      "Accuracy"
+    ]
+  },
+  "seg-0005": {
+    "segmentId": "seg-0005",
+    "originalTarget": "The user interface was designed to be intuitive.",
+    "improvedTarget": "The user interface was designed to be intuitive. (revised)",
+    "rationale": "The noun phrase structure was restructured to improve readability for native English speakers.",
+    "errorCategories": [
+      "Mistranslation",
+      "Terminology"
+    ]
+  },
+  "seg-0006": {
+    "segmentId": "seg-0006",
+    "originalTarget": "Click 'Next' to continue.",
+    "improvedTarget": "Click 'Next' to continue. (revised for clarity)",
+    "rationale": "The idiomatic expression was translated too literally; the suggested version uses a natural English equivalent.",
+    "errorCategories": [
+      "Mistranslation",
+      "Terminology",
+      "Fluency"
+    ]
+  },
+  "seg-0007": {
+    "segmentId": "seg-0007",
+    "originalTarget": "Please enter your password.",
+    "improvedTarget": "Please enter your password. (revised for clarity)",
+    "rationale": "Passive voice was incorrectly rendered; the active construction is preferred in English.",
+    "errorCategories": [
+      "Terminology"
+    ]
+  },
+  "seg-0008": {
+    "segmentId": "seg-0008",
+    "originalTarget": "The file has been saved successfully.",
+    "improvedTarget": "The file has been stored successfully.",
+    "rationale": "The indefinite article was omitted before a countable noun.",
+    "errorCategories": [
+      "Fluency",
+      "Accuracy",
+      "Terminology"
+    ]
+  },
+  "seg-0009": {
+    "segmentId": "seg-0009",
+    "originalTarget": "An error has occurred.",
+    "improvedTarget": "An error has occurred. (revised for clarity)",
+    "rationale": "Terminology mismatch: 'configuration' should be used instead of 'settings' for consistency with the glossary.",
+    "errorCategories": [
+      "Terminology",
+      "Accuracy"
+    ]
+  },
+  "seg-0010": {
+    "segmentId": "seg-0010",
+    "originalTarget": "Your session has expired.",
+    "improvedTarget": "Your session has expired. (revised for clarity)",
+    "rationale": "The modal verb 'should' carries a softer obligation than the German 'muss'; 'must' is the correct mapping.",
+    "errorCategories": [
+      "Accuracy",
+      "Mistranslation",
+      "Terminology"
+    ]
+  },
+  "seg-0011": {
+    "segmentId": "seg-0011",
+    "originalTarget": "The operation was completed successfully.",
+    "improvedTarget": "The operation was completed successfully. (revised for clarity)",
+    "rationale": "The noun phrase structure was restructured to improve readability for native English speakers.",
+    "errorCategories": [
+      "Accuracy",
+      "Mistranslation",
+      "Terminology"
+    ]
+  },
+  "seg-0012": {
+    "segmentId": "seg-0012",
+    "originalTarget": "Reload the page to see the changes.",
+    "improvedTarget": "Reload the page to see the changes. (revised)",
+    "rationale": "Passive voice was incorrectly rendered; the active construction is preferred in English.",
+    "errorCategories": [
+      "Accuracy",
+      "Mistranslation"
+    ]
+  },
+  "seg-0013": {
+    "segmentId": "seg-0013",
+    "originalTarget": "You do not have permission for this action.",
+    "improvedTarget": "You do not have permission for this action. (revised)",
+    "rationale": "The indefinite article was omitted before a countable noun.",
+    "errorCategories": [
+      "Mistranslation"
+    ]
+  },
+  "seg-0014": {
+    "segmentId": "seg-0014",
+    "originalTarget": "The system is being updated.",
+    "improvedTarget": "The system is being updated. (revised for clarity)",
+    "rationale": "The original translation uses a slightly informal register that doesn't match the source document's formal tone.",
+    "errorCategories": [
+      "Mistranslation",
+      "Fluency",
+      "Accuracy"
+    ]
+  },
+  "seg-0015": {
+    "segmentId": "seg-0015",
+    "originalTarget": "Please wait a moment.",
+    "improvedTarget": "Please wait a moment. (revised for clarity)",
+    "rationale": "Passive voice was incorrectly rendered; the active construction is preferred in English.",
+    "errorCategories": [
+      "Accuracy"
+    ]
+  },
+  "seg-0016": {
+    "segmentId": "seg-0016",
+    "originalTarget": "Thank you for your inquiry.",
+    "improvedTarget": "Thank you for your inquiry. (revised for clarity)",
+    "rationale": "Word order in the subordinate clause does not follow English convention.",
+    "errorCategories": [
+      "Terminology",
+      "Accuracy"
+    ]
+  },
+  "seg-0017": {
+    "segmentId": "seg-0017",
+    "originalTarget": "We look forward to working with you.",
+    "improvedTarget": "We look forward to working with you. (revised)",
+    "rationale": "The noun phrase structure was restructured to improve readability for native English speakers.",
+    "errorCategories": [
+      "Accuracy",
+      "Terminology",
+      "Mistranslation"
+    ]
+  },
+  "seg-0018": {
+    "segmentId": "seg-0018",
+    "originalTarget": "Your order will be processed as quickly as possible.",
+    "improvedTarget": "Your order will be processed as promptly as possible.",
+    "rationale": "The modal verb 'should' carries a softer obligation than the German 'muss'; 'must' is the correct mapping.",
+    "errorCategories": [
+      "Terminology"
+    ]
+  },
+  "seg-0019": {
+    "segmentId": "seg-0019",
+    "originalTarget": "Please contact us if you have any further questions.",
+    "improvedTarget": "Kindly contact us if you have any further questions.",
+    "rationale": "The idiomatic expression was translated too literally; the suggested version uses a natural English equivalent.",
+    "errorCategories": [
+      "Terminology"
+    ]
+  },
+  "seg-0020": {
+    "segmentId": "seg-0020",
+    "originalTarget": "Delivery will take place within 3–5 business days.",
+    "improvedTarget": "Delivery will take place within 3–5 business days. (revised)",
+    "rationale": "The indefinite article was omitted before a countable noun.",
+    "errorCategories": [
+      "Mistranslation"
+    ]
+  },
+  "seg-0021": {
+    "segmentId": "seg-0021",
+    "originalTarget": "We apologize for any inconvenience caused.",
+    "improvedTarget": "We apologize for any inconvenience caused. (revised)",
+    "rationale": "The modal verb 'should' carries a softer obligation than the German 'muss'; 'must' is the correct mapping.",
+    "errorCategories": [
+      "Terminology",
+      "Accuracy"
+    ]
+  },
+  "seg-0022": {
+    "segmentId": "seg-0022",
+    "originalTarget": "Please confirm your email address.",
+    "improvedTarget": "Please confirm your email address. (revised for clarity)",
+    "rationale": "The noun phrase structure was restructured to improve readability for native English speakers.",
+    "errorCategories": [
+      "Terminology",
+      "Accuracy",
+      "Fluency"
+    ]
+  },
+  "seg-0023": {
+    "segmentId": "seg-0023",
+    "originalTarget": "The contract takes effect upon signing.",
+    "improvedTarget": "The contract takes effect upon signing. (revised)",
+    "rationale": "The term 'completed' is more precise than 'finished' in this technical context.",
+    "errorCategories": [
+      "Mistranslation",
+      "Fluency",
+      "Terminology"
+    ]
+  },
+  "seg-0024": {
+    "segmentId": "seg-0024",
+    "originalTarget": "All prices include VAT.",
+    "improvedTarget": "All prices include VAT. (revised for clarity)",
+    "rationale": "Passive voice was incorrectly rendered; the active construction is preferred in English.",
+    "errorCategories": [
+      "Accuracy"
+    ]
+  },
+  "seg-0025": {
+    "segmentId": "seg-0025",
+    "originalTarget": "Your order has been placed successfully.",
+    "improvedTarget": "Your order has been placed successfully. (revised)",
+    "rationale": "Word order in the subordinate clause does not follow English convention.",
+    "errorCategories": [
+      "Mistranslation",
+      "Accuracy"
+    ]
+  },
+  "seg-0026": {
+    "segmentId": "seg-0026",
+    "originalTarget": "The API supports RESTful requests in JSON format.",
+    "improvedTarget": "The API supports RESTful requests in JSON format. (revised)",
+    "rationale": "The present perfect tense is more appropriate here than the simple past.",
+    "errorCategories": [
+      "Mistranslation"
+    ]
+  },
+  "seg-0027": {
+    "segmentId": "seg-0027",
+    "originalTarget": "Restart the device to complete the installation.",
+    "improvedTarget": "Restart the device to complete the installation. (revised)",
+    "rationale": "Terminology mismatch: 'configuration' should be used instead of 'settings' for consistency with the glossary.",
+    "errorCategories": [
+      "Terminology",
+      "Accuracy"
+    ]
+  },
+  "seg-0028": {
+    "segmentId": "seg-0028",
+    "originalTarget": "The connection to the server could not be established.",
+    "improvedTarget": "The connection to the server could not be established. (revised)",
+    "rationale": "Passive voice was incorrectly rendered; the active construction is preferred in English.",
+    "errorCategories": [
+      "Fluency"
+    ]
+  },
+  "seg-0029": {
+    "segmentId": "seg-0029",
+    "originalTarget": "Please ensure that the latest version is installed.",
+    "improvedTarget": "Kindly ensure that the latest version is installed.",
+    "rationale": "The original translation uses a slightly informal register that doesn't match the source document's formal tone.",
+    "errorCategories": [
+      "Accuracy",
+      "Fluency",
+      "Mistranslation"
+    ]
+  },
+  "seg-0030": {
+    "segmentId": "seg-0030",
+    "originalTarget": "The configuration has been saved successfully.",
+    "improvedTarget": "The configuration has been stored successfully.",
+    "rationale": "Word order in the subordinate clause does not follow English convention.",
+    "errorCategories": [
+      "Accuracy",
+      "Mistranslation",
+      "Terminology"
+    ]
+  },
+  "seg-0031": {
+    "segmentId": "seg-0031",
+    "originalTarget": "The document contains confidential information.",
+    "improvedTarget": "The document contains confidential information. (revised for clarity)",
+    "rationale": "Word order in the subordinate clause does not follow English convention.",
+    "errorCategories": [
+      "Fluency",
+      "Mistranslation"
+    ]
+  },
+  "seg-0032": {
+    "segmentId": "seg-0032",
+    "originalTarget": "The terms of use must be accepted.",
+    "improvedTarget": "The terms of use must be accepted. (revised)",
+    "rationale": "The term 'completed' is more precise than 'finished' in this technical context.",
+    "errorCategories": [
+      "Fluency",
+      "Terminology"
+    ]
+  },
+  "seg-0033": {
+    "segmentId": "seg-0033",
+    "originalTarget": "Subject to change without notice.",
+    "improvedTarget": "Subject to change without notice. (revised for clarity)",
+    "rationale": "The modal verb 'should' carries a softer obligation than the German 'muss'; 'must' is the correct mapping.",
+    "errorCategories": [
+      "Accuracy"
+    ]
+  },
+  "seg-0034": {
+    "segmentId": "seg-0034",
+    "originalTarget": "All rights reserved.",
+    "improvedTarget": "All rights reserved. (revised for clarity)",
+    "rationale": "Terminology mismatch: 'configuration' should be used instead of 'settings' for consistency with the glossary.",
+    "errorCategories": [
+      "Terminology",
+      "Mistranslation",
+      "Accuracy"
+    ]
+  },
+  "seg-0035": {
+    "segmentId": "seg-0035",
+    "originalTarget": "The password must contain at least 8 characters.",
+    "improvedTarget": "The password must contain at least 8 characters. (revised)",
+    "rationale": "The term 'completed' is more precise than 'finished' in this technical context.",
+    "errorCategories": [
+      "Mistranslation",
+      "Fluency",
+      "Terminology"
+    ]
+  },
+  "seg-0036": {
+    "segmentId": "seg-0036",
+    "originalTarget": "The user can change the settings at any time.",
+    "improvedTarget": "The user can change the settings at any time. (revised)",
+    "rationale": "Word order in the subordinate clause does not follow English convention.",
+    "errorCategories": [
+      "Fluency",
+      "Accuracy",
+      "Terminology"
+    ]
+  },
+  "seg-0037": {
+    "segmentId": "seg-0037",
+    "originalTarget": "The project has been completed successfully.",
+    "improvedTarget": "The project has been finished successfully.",
+    "rationale": "The indefinite article was omitted before a countable noun.",
+    "errorCategories": [
+      "Terminology",
+      "Accuracy"
+    ]
+  },
+  "seg-0038": {
+    "segmentId": "seg-0038",
+    "originalTarget": "We look forward to your feedback.",
+    "improvedTarget": "We look forward to your feedback. (revised)",
+    "rationale": "The present perfect tense is more appropriate here than the simple past.",
+    "errorCategories": [
+      "Fluency",
+      "Accuracy"
+    ]
+  },
+  "seg-0039": {
+    "segmentId": "seg-0039",
+    "originalTarget": "The new version has been published.",
+    "improvedTarget": "The new version has been published. (revised)",
+    "rationale": "The present perfect tense is more appropriate here than the simple past.",
+    "errorCategories": [
+      "Fluency",
+      "Mistranslation"
+    ]
+  },
+  "seg-0040": {
+    "segmentId": "seg-0040",
+    "originalTarget": "Please read the terms of use carefully.",
+    "improvedTarget": "Kindly read the terms of use carefully.",
+    "rationale": "Word order in the subordinate clause does not follow English convention.",
+    "errorCategories": [
+      "Fluency"
+    ]
+  },
+  "seg-0041": {
+    "segmentId": "seg-0041",
+    "originalTarget": "The system will be shut down for maintenance.",
+    "improvedTarget": "The system will be shut down for maintenance. (revised)",
+    "rationale": "The noun phrase structure was restructured to improve readability for native English speakers.",
+    "errorCategories": [
+      "Terminology",
+      "Fluency"
+    ]
+  },
+  "seg-0042": {
+    "segmentId": "seg-0042",
+    "originalTarget": "Your session has expired. Please log in again.",
+    "improvedTarget": "Your session has expired. Kindly log in again.",
+    "rationale": "Word order in the subordinate clause does not follow English convention.",
+    "errorCategories": [
+      "Fluency"
+    ]
+  },
+  "seg-0043": {
+    "segmentId": "seg-0043",
+    "originalTarget": "The transaction was completed successfully.",
+    "improvedTarget": "The transaction was completed successfully. (revised for clarity)",
+    "rationale": "The modal verb 'should' carries a softer obligation than the German 'muss'; 'must' is the correct mapping.",
+    "errorCategories": [
+      "Terminology",
+      "Accuracy",
+      "Mistranslation"
+    ]
+  },
+  "seg-0044": {
+    "segmentId": "seg-0044",
+    "originalTarget": "The download has started.",
+    "improvedTarget": "The download has started. (revised for clarity)",
+    "rationale": "The original translation uses a slightly informal register that doesn't match the source document's formal tone.",
+    "errorCategories": [
+      "Fluency"
+    ]
+  },
+  "seg-0045": {
+    "segmentId": "seg-0045",
+    "originalTarget": "Please enter a valid password.",
+    "improvedTarget": "Please enter a valid password. (revised for clarity)",
+    "rationale": "The idiomatic expression was translated too literally; the suggested version uses a natural English equivalent.",
+    "errorCategories": [
+      "Fluency",
+      "Terminology",
+      "Mistranslation"
+    ]
+  },
+  "seg-0046": {
+    "segmentId": "seg-0046",
+    "originalTarget": "The maximum file size is 10 MB.",
+    "improvedTarget": "The maximum file size is 10 MB. (revised)",
+    "rationale": "Word order in the subordinate clause does not follow English convention.",
+    "errorCategories": [
+      "Mistranslation",
+      "Fluency",
+      "Terminology"
+    ]
+  },
+  "seg-0047": {
+    "segmentId": "seg-0047",
+    "originalTarget": "Your request is being processed.",
+    "improvedTarget": "Your request is being processed. (revised for clarity)",
+    "rationale": "Word order in the subordinate clause does not follow English convention.",
+    "errorCategories": [
+      "Mistranslation",
+      "Terminology",
+      "Fluency"
+    ]
+  },
+  "seg-0048": {
+    "segmentId": "seg-0048",
+    "originalTarget": "All fields must be filled in.",
+    "improvedTarget": "All fields must be filled in. (revised)",
+    "rationale": "The present perfect tense is more appropriate here than the simple past.",
+    "errorCategories": [
+      "Accuracy"
+    ]
+  },
+  "seg-0049": {
+    "segmentId": "seg-0049",
+    "originalTarget": "The form was submitted successfully.",
+    "improvedTarget": "The form was submitted successfully. (revised for clarity)",
+    "rationale": "Passive voice was incorrectly rendered; the active construction is preferred in English.",
+    "errorCategories": [
+      "Mistranslation",
+      "Accuracy",
+      "Terminology"
+    ]
+  },
+  "seg-0050": {
+    "segmentId": "seg-0050",
+    "originalTarget": "The translation was created automatically.",
+    "improvedTarget": "The translation was created automatically. (revised for clarity)",
+    "rationale": "Word order in the subordinate clause does not follow English convention.",
+    "errorCategories": [
+      "Terminology",
+      "Accuracy",
+      "Mistranslation"
+    ]
+  },
+  "seg-0051": {
+    "segmentId": "seg-0051",
+    "originalTarget": "Please select your preferred language.",
+    "improvedTarget": "Please select your preferred language. (revised for clarity)",
+    "rationale": "The original translation uses a slightly informal register that doesn't match the source document's formal tone.",
+    "errorCategories": [
+      "Fluency",
+      "Accuracy"
+    ]
+  },
+  "seg-0052": {
+    "segmentId": "seg-0052",
+    "originalTarget": "System requirements can be found in the documentation.",
+    "improvedTarget": "System requirements can be found in the documentation. (revised)",
+    "rationale": "The term 'completed' is more precise than 'finished' in this technical context.",
+    "errorCategories": [
+      "Fluency"
+    ]
+  },
+  "seg-0053": {
+    "segmentId": "seg-0053",
+    "originalTarget": "The export was completed successfully.",
+    "improvedTarget": "The export was completed successfully. (revised for clarity)",
+    "rationale": "Terminology mismatch: 'configuration' should be used instead of 'settings' for consistency with the glossary.",
+    "errorCategories": [
+      "Accuracy",
+      "Terminology",
+      "Mistranslation"
+    ]
+  },
+  "seg-0054": {
+    "segmentId": "seg-0054",
+    "originalTarget": "Aligning the segments takes a moment.",
+    "improvedTarget": "Aligning the segments takes a moment. (revised)",
+    "rationale": "The term 'completed' is more precise than 'finished' in this technical context.",
+    "errorCategories": [
+      "Fluency",
+      "Accuracy"
+    ]
+  },
+  "seg-0055": {
+    "segmentId": "seg-0055",
+    "originalTarget": "Please review your entries before submitting.",
+    "improvedTarget": "Kindly review your entries before submitting.",
+    "rationale": "Terminology mismatch: 'configuration' should be used instead of 'settings' for consistency with the glossary.",
+    "errorCategories": [
+      "Terminology",
+      "Accuracy"
+    ]
+  },
+  "seg-0056": {
+    "segmentId": "seg-0056",
+    "originalTarget": "The file could not be uploaded.",
+    "improvedTarget": "The file could not be uploaded. (revised)",
+    "rationale": "Passive voice was incorrectly rendered; the active construction is preferred in English.",
+    "errorCategories": [
+      "Fluency",
+      "Accuracy"
+    ]
+  },
+  "seg-0057": {
+    "segmentId": "seg-0057",
+    "originalTarget": "Your account has been created successfully.",
+    "improvedTarget": "Your account has been created successfully. (revised)",
+    "rationale": "The present perfect tense is more appropriate here than the simple past.",
+    "errorCategories": [
+      "Terminology",
+      "Mistranslation"
+    ]
+  },
+  "seg-0058": {
+    "segmentId": "seg-0058",
+    "originalTarget": "The product is currently out of stock.",
+    "improvedTarget": "The product is currently out of stock. (revised)",
+    "rationale": "The idiomatic expression was translated too literally; the suggested version uses a natural English equivalent.",
+    "errorCategories": [
+      "Mistranslation",
+      "Terminology",
+      "Fluency"
+    ]
+  },
+  "seg-0059": {
+    "segmentId": "seg-0059",
+    "originalTarget": "Please enter a valid email address.",
+    "improvedTarget": "Kindly enter a valid email address.",
+    "rationale": "Word order in the subordinate clause does not follow English convention.",
+    "errorCategories": [
+      "Terminology",
+      "Fluency"
+    ]
+  },
+  "seg-0060": {
+    "segmentId": "seg-0060",
+    "originalTarget": "The search returned no results.",
+    "improvedTarget": "The search returned no results. (revised for clarity)",
+    "rationale": "The noun phrase structure was restructured to improve readability for native English speakers.",
+    "errorCategories": [
+      "Terminology"
+    ]
+  },
+  "seg-0061": {
+    "segmentId": "seg-0061",
+    "originalTarget": "Click 'Save' to continue.",
+    "improvedTarget": "Click 'Save' to continue. (revised for clarity)",
+    "rationale": "The term 'completed' is more precise than 'finished' in this technical context.",
+    "errorCategories": [
+      "Terminology",
+      "Fluency",
+      "Accuracy"
+    ]
+  },
+  "seg-0062": {
+    "segmentId": "seg-0062",
+    "originalTarget": "The document was exported successfully.",
+    "improvedTarget": "The document was exported successfully. (revised for clarity)",
+    "rationale": "The term 'completed' is more precise than 'finished' in this technical context.",
+    "errorCategories": [
+      "Mistranslation",
+      "Terminology",
+      "Accuracy"
+    ]
+  },
+  "seg-0063": {
+    "segmentId": "seg-0063",
+    "originalTarget": "The language pair has been set successfully.",
+    "improvedTarget": "The language pair has been set successfully. (revised)",
+    "rationale": "The modal verb 'should' carries a softer obligation than the German 'muss'; 'must' is the correct mapping.",
+    "errorCategories": [
+      "Terminology",
+      "Accuracy"
+    ]
+  },
+  "seg-0064": {
+    "segmentId": "seg-0064",
+    "originalTarget": "Please select a source file.",
+    "improvedTarget": "Please select a source file. (revised for clarity)",
+    "rationale": "The original translation uses a slightly informal register that doesn't match the source document's formal tone.",
+    "errorCategories": [
+      "Accuracy",
+      "Fluency",
+      "Mistranslation"
+    ]
+  },
+  "seg-0065": {
+    "segmentId": "seg-0065",
+    "originalTarget": "The translation unit has been saved.",
+    "improvedTarget": "The translation unit has been stored.",
+    "rationale": "Passive voice was incorrectly rendered; the active construction is preferred in English.",
+    "errorCategories": [
+      "Fluency",
+      "Mistranslation",
+      "Terminology"
+    ]
+  },
+  "seg-0066": {
+    "segmentId": "seg-0066",
+    "originalTarget": "Your translation memory is being created.",
+    "improvedTarget": "Your translation memory is being created. (revised)",
+    "rationale": "Word order in the subordinate clause does not follow English convention.",
+    "errorCategories": [
+      "Accuracy"
+    ]
+  },
+  "seg-0067": {
+    "segmentId": "seg-0067",
+    "originalTarget": "The segments have been aligned successfully.",
+    "improvedTarget": "The segments have been aligned successfully. (revised)",
+    "rationale": "The modal verb 'should' carries a softer obligation than the German 'muss'; 'must' is the correct mapping.",
+    "errorCategories": [
+      "Accuracy"
+    ]
+  },
+  "seg-0068": {
+    "segmentId": "seg-0068",
+    "originalTarget": "Click the checkmark to confirm the segment.",
+    "improvedTarget": "Click the checkmark to confirm the segment. (revised)",
+    "rationale": "Passive voice was incorrectly rendered; the active construction is preferred in English.",
+    "errorCategories": [
+      "Mistranslation",
+      "Fluency",
+      "Terminology"
+    ]
+  },
+  "seg-0069": {
+    "segmentId": "seg-0069",
+    "originalTarget": "The segment has been removed from the translation memory.",
+    "improvedTarget": "The segment has been removed from the translation memory. (revised)",
+    "rationale": "Word order in the subordinate clause does not follow English convention.",
+    "errorCategories": [
+      "Accuracy",
+      "Fluency"
+    ]
+  },
+  "seg-0070": {
+    "segmentId": "seg-0070",
+    "originalTarget": "Please select at least one segment.",
+    "improvedTarget": "Kindly select at least one segment.",
+    "rationale": "The term 'completed' is more precise than 'finished' in this technical context.",
+    "errorCategories": [
+      "Mistranslation"
+    ]
+  },
+  "seg-0071": {
+    "segmentId": "seg-0071",
+    "originalTarget": "The quality check has been completed.",
+    "improvedTarget": "The quality check has been finished.",
+    "rationale": "Terminology mismatch: 'configuration' should be used instead of 'settings' for consistency with the glossary.",
+    "errorCategories": [
+      "Mistranslation",
+      "Terminology"
+    ]
+  },
+  "seg-0072": {
+    "segmentId": "seg-0072",
+    "originalTarget": "The score indicates the quality of the match.",
+    "improvedTarget": "The score indicates the quality of the match. (revised)",
+    "rationale": "The present perfect tense is more appropriate here than the simple past.",
+    "errorCategories": [
+      "Fluency",
+      "Accuracy",
+      "Terminology"
+    ]
+  },
+  "seg-0073": {
+    "segmentId": "seg-0073",
+    "originalTarget": "Green scores indicate high translation quality.",
+    "improvedTarget": "Green scores indicate high translation quality. (revised)",
+    "rationale": "The present perfect tense is more appropriate here than the simple past.",
+    "errorCategories": [
+      "Fluency"
+    ]
+  },
+  "seg-0074": {
+    "segmentId": "seg-0074",
+    "originalTarget": "Segments with a low score should be reviewed.",
+    "improvedTarget": "Segments with a low score should be reviewed. (revised)",
+    "rationale": "Passive voice was incorrectly rendered; the active construction is preferred in English.",
+    "errorCategories": [
+      "Accuracy"
+    ]
+  },
+  "seg-0075": {
+    "segmentId": "seg-0075",
+    "originalTarget": "The translation memory has been saved successfully.",
+    "improvedTarget": "The translation memory has been stored successfully.",
+    "rationale": "The present perfect tense is more appropriate here than the simple past.",
+    "errorCategories": [
+      "Mistranslation"
+    ]
+  },
+  "seg-0076": {
+    "segmentId": "seg-0076",
+    "originalTarget": "Export your translation memory as a TMX file.",
+    "improvedTarget": "Export your translation memory as a TMX file. (revised)",
+    "rationale": "The present perfect tense is more appropriate here than the simple past.",
+    "errorCategories": [
+      "Accuracy"
+    ]
+  },
+  "seg-0077": {
+    "segmentId": "seg-0077",
+    "originalTarget": "The TMX format is the industry standard for translation memories.",
+    "improvedTarget": "The TMX format is the industry standard for translation memories. (revised)",
+    "rationale": "The idiomatic expression was translated too literally; the suggested version uses a natural English equivalent.",
+    "errorCategories": [
+      "Terminology",
+      "Accuracy",
+      "Mistranslation"
+    ]
+  },
+  "seg-0078": {
+    "segmentId": "seg-0078",
+    "originalTarget": "Please upload a compatible file.",
+    "improvedTarget": "Please upload a compatible file. (revised for clarity)",
+    "rationale": "The modal verb 'should' carries a softer obligation than the German 'muss'; 'must' is the correct mapping.",
+    "errorCategories": [
+      "Mistranslation",
+      "Terminology",
+      "Accuracy"
+    ]
+  },
+  "seg-0079": {
+    "segmentId": "seg-0079",
+    "originalTarget": "The preview shows the aligned segment pairs.",
+    "improvedTarget": "The preview shows the aligned segment pairs. (revised)",
+    "rationale": "Passive voice was incorrectly rendered; the active construction is preferred in English.",
+    "errorCategories": [
+      "Terminology",
+      "Accuracy",
+      "Mistranslation"
+    ]
+  },
+  "seg-0080": {
+    "segmentId": "seg-0080",
+    "originalTarget": "Review the excluded segments carefully.",
+    "improvedTarget": "Review the excluded segments carefully. (revised for clarity)",
+    "rationale": "The present perfect tense is more appropriate here than the simple past.",
+    "errorCategories": [
+      "Accuracy",
+      "Terminology",
+      "Mistranslation"
+    ]
+  },
+  "seg-0081": {
+    "segmentId": "seg-0081",
+    "originalTarget": "AI review can improve translation quality.",
+    "improvedTarget": "AI review can improve translation quality. (revised)",
+    "rationale": "The term 'completed' is more precise than 'finished' in this technical context.",
+    "errorCategories": [
+      "Accuracy",
+      "Terminology",
+      "Mistranslation"
+    ]
+  },
+  "seg-0082": {
+    "segmentId": "seg-0082",
+    "originalTarget": "Apply AI suggestions to all segments.",
+    "improvedTarget": "Apply AI suggestions to all segments. (revised)",
+    "rationale": "The noun phrase structure was restructured to improve readability for native English speakers.",
+    "errorCategories": [
+      "Terminology"
+    ]
+  },
+  "seg-0083": {
+    "segmentId": "seg-0083",
+    "originalTarget": "AI-based post-editing optimises your translations.",
+    "improvedTarget": "AI-based post-editing optimises your translations. (revised for clarity)",
+    "rationale": "Passive voice was incorrectly rendered; the active construction is preferred in English.",
+    "errorCategories": [
+      "Mistranslation"
+    ]
+  },
+  "seg-0084": {
+    "segmentId": "seg-0084",
+    "originalTarget": "Progress is saved automatically.",
+    "improvedTarget": "Progress is saved automatically. (revised for clarity)",
+    "rationale": "The modal verb 'should' carries a softer obligation than the German 'muss'; 'must' is the correct mapping.",
+    "errorCategories": [
+      "Fluency",
+      "Mistranslation"
+    ]
+  },
+  "seg-0085": {
+    "segmentId": "seg-0085",
+    "originalTarget": "Select an existing translation memory.",
+    "improvedTarget": "Select an existing translation memory. (revised for clarity)",
+    "rationale": "The original translation uses a slightly informal register that doesn't match the source document's formal tone.",
+    "errorCategories": [
+      "Accuracy",
+      "Fluency",
+      "Mistranslation"
+    ]
+  },
+  "seg-0086": {
+    "segmentId": "seg-0086",
+    "originalTarget": "Create a new translation memory for this project.",
+    "improvedTarget": "Create a new translation memory for this project. (revised)",
+    "rationale": "The original translation uses a slightly informal register that doesn't match the source document's formal tone.",
+    "errorCategories": [
+      "Mistranslation",
+      "Accuracy"
+    ]
+  },
+  "seg-0087": {
+    "segmentId": "seg-0087",
+    "originalTarget": "He said: \"We'll see each other tomorrow.\"",
+    "improvedTarget": "He said: \"We'll see each other tomorrow.\" (revised)",
+    "rationale": "The term 'completed' is more precise than 'finished' in this technical context.",
+    "errorCategories": [
+      "Fluency",
+      "Mistranslation"
+    ]
+  },
+  "seg-0088": {
+    "segmentId": "seg-0088",
+    "originalTarget": "He replied: \"Yes, I will come.\",",
+    "improvedTarget": "He replied: \"Yes, I will come.\", (revised)",
+    "rationale": "The original translation uses a slightly informal register that doesn't match the source document's formal tone.",
+    "errorCategories": [
+      "Terminology",
+      "Accuracy"
+    ]
+  },
+  "seg-0089": {
+    "segmentId": "seg-0089",
+    "originalTarget": "The project was completed up.",
+    "improvedTarget": "The project was completed up. (revised for clarity)",
+    "rationale": "The modal verb 'should' carries a softer obligation than the German 'muss'; 'must' is the correct mapping.",
+    "errorCategories": [
+      "Mistranslation",
+      "Fluency"
+    ]
+  },
+  "seg-0090": {
+    "segmentId": "seg-0090",
+    "originalTarget": "We ask for your kind understanding and patience in this matter.",
+    "improvedTarget": "We ask for your kind understanding and patience in this matter. (revised)",
+    "rationale": "Word order in the subordinate clause does not follow English convention.",
+    "errorCategories": [
+      "Fluency",
+      "Accuracy"
+    ]
+  },
+  "seg-0091": {
+    "segmentId": "seg-0091",
+    "originalTarget": "This is an intentionally very long text segment used to demonstrate exactly how the layout reacts when a segment wraps across multiple lines. It is absolutely crucial to ensure that the line height, the internal padding, and the vertical alignment of the scores within the grid remain completely intact, even when the translated content reaches five lines or more. This helps designers and developers to accurately evaluate this specific edge case in the user interface. We add a little more text to ensure it spans.",
+    "improvedTarget": "This is an intentionally very long text segment used to demonstrate exactly how the layout reacts when a segment wraps across multiple lines. It is absolutely crucial to guarantee that the line height, the internal padding, and the vertical alignment of the scores within the grid remain completely intact, even when the translated content reaches five lines or more. This helps designers and developers to accurately evaluate this specific edge case in the user interface. We add a little more text to ensure it spans.",
+    "rationale": "Passive voice was incorrectly rendered; the active construction is preferred in English.",
+    "errorCategories": [
+      "Mistranslation",
+      "Fluency"
+    ]
+  },
+  "seg-0092": {
+    "segmentId": "seg-0092",
+    "originalTarget": "The terms of use of this software govern the rights and obligations of the user and the provider. By using the software, you agree to the following terms. The provider reserves the right to change these terms at any time.",
+    "improvedTarget": "The terms of use of this software govern the rights and obligations of the user and the provider. By by using the software, you agree to the following terms. The provider reserves the right to change these terms at any time.",
+    "rationale": "Word order in the subordinate clause does not follow English convention.",
+    "errorCategories": [
+      "Accuracy",
+      "Mistranslation",
+      "Fluency"
+    ]
+  },
+  "seg-0093": {
+    "segmentId": "seg-0093",
+    "originalTarget": "Please note that all uploaded documents are used exclusively for creating the translation memory and will not be stored permanently on our servers after processing. We place great importance on protecting your data and comply with applicable data protection regulations.",
+    "improvedTarget": "Kindly note that all uploaded documents are used exclusively for creating the translation memory and will not be stored permanently on our servers after processing. We place great importance on protecting your data and comply with applicable data protection regulations.",
+    "rationale": "The original translation uses a slightly informal register that doesn't match the source document's formal tone.",
+    "errorCategories": [
+      "Mistranslation",
+      "Accuracy",
+      "Terminology"
+    ]
+  },
+  "seg-0094": {
+    "segmentId": "seg-0094",
+    "originalTarget": "The Translation Memory Creator tool allows you to create high-quality translation memories from already-translated documents, which can then be integrated into your translation workflow to sustainably improve the consistency and efficiency of your translation projects.",
+    "improvedTarget": "The Translation Memory Creator tool allows you to create high-quality translation memories from already-translated documents, which can then be integrated into your translation workflow to sustainably improve the consistency and efficiency of your translation projects. (revised)",
+    "rationale": "Terminology mismatch: 'configuration' should be used instead of 'settings' for consistency with the glossary.",
+    "errorCategories": [
+      "Mistranslation"
+    ]
+  },
+  "seg-0095": {
+    "segmentId": "seg-0095",
+    "originalTarget": "The configuration file has been updated.",
+    "improvedTarget": "The configuration file has been updated. (revised)",
+    "rationale": "Word order in the subordinate clause does not follow English convention.",
+    "errorCategories": [
+      "Accuracy"
+    ]
+  },
+  "seg-0096": {
+    "segmentId": "seg-0096",
+    "originalTarget": "Please restart the service.",
+    "improvedTarget": "Please restart the service. (revised for clarity)",
+    "rationale": "The idiomatic expression was translated too literally; the suggested version uses a natural English equivalent.",
+    "errorCategories": [
+      "Accuracy"
+    ]
+  },
+  "seg-0097": {
+    "segmentId": "seg-0097",
+    "originalTarget": "The backup was created successfully.",
+    "improvedTarget": "The backup was created successfully. (revised for clarity)",
+    "rationale": "Terminology mismatch: 'configuration' should be used instead of 'settings' for consistency with the glossary.",
+    "errorCategories": [
+      "Mistranslation"
+    ]
+  },
+  "seg-0098": {
+    "segmentId": "seg-0098",
+    "originalTarget": "The cache has been cleared.",
+    "improvedTarget": "The cache has been cleared. (revised for clarity)",
+    "rationale": "Passive voice was incorrectly rendered; the active construction is preferred in English.",
+    "errorCategories": [
+      "Fluency"
+    ]
+  },
+  "seg-0099": {
+    "segmentId": "seg-0099",
+    "originalTarget": "The database connection is active.",
+    "improvedTarget": "The database connection is active. (revised for clarity)",
+    "rationale": "The original translation uses a slightly informal register that doesn't match the source document's formal tone.",
+    "errorCategories": [
+      "Terminology",
+      "Accuracy",
+      "Fluency"
+    ]
+  },
+  "seg-0100": {
+    "segmentId": "seg-0100",
+    "originalTarget": "The update has been installed.",
+    "improvedTarget": "The update has been installed. (revised for clarity)",
+    "rationale": "Passive voice was incorrectly rendered; the active construction is preferred in English.",
+    "errorCategories": [
+      "Terminology",
+      "Mistranslation",
+      "Accuracy"
+    ]
+  },
+  "seg-0101": {
+    "segmentId": "seg-0101",
+    "originalTarget": "The log files have been archived.",
+    "improvedTarget": "The log files have been archived. (revised)",
+    "rationale": "Passive voice was incorrectly rendered; the active construction is preferred in English.",
+    "errorCategories": [
+      "Mistranslation",
+      "Terminology",
+      "Fluency"
+    ]
+  },
+  "seg-0102": {
+    "segmentId": "seg-0102",
+    "originalTarget": "The server is not responding.",
+    "improvedTarget": "The server is not responding. (revised for clarity)",
+    "rationale": "The present perfect tense is more appropriate here than the simple past.",
+    "errorCategories": [
+      "Accuracy",
+      "Mistranslation"
+    ]
+  },
+  "seg-0103": {
+    "segmentId": "seg-0103",
+    "originalTarget": "The pipeline was executed successfully.",
+    "improvedTarget": "The pipeline was executed successfully. (revised for clarity)",
+    "rationale": "The noun phrase structure was restructured to improve readability for native English speakers.",
+    "errorCategories": [
+      "Mistranslation"
+    ]
+  },
+  "seg-0104": {
+    "segmentId": "seg-0104",
+    "originalTarget": "The build process is complete.",
+    "improvedTarget": "The build process is complete. (revised for clarity)",
+    "rationale": "The term 'completed' is more precise than 'finished' in this technical context.",
+    "errorCategories": [
+      "Mistranslation",
+      "Fluency"
+    ]
+  },
+  "seg-0105": {
+    "segmentId": "seg-0105",
+    "originalTarget": "The test coverage is 94%.",
+    "improvedTarget": "The test coverage is 94%. (revised for clarity)",
+    "rationale": "Passive voice was incorrectly rendered; the active construction is preferred in English.",
+    "errorCategories": [
+      "Mistranslation",
+      "Accuracy"
+    ]
+  },
+  "seg-0106": {
+    "segmentId": "seg-0106",
+    "originalTarget": "The deployment has been executed.",
+    "improvedTarget": "The deployment has been executed. (revised for clarity)",
+    "rationale": "Terminology mismatch: 'configuration' should be used instead of 'settings' for consistency with the glossary.",
+    "errorCategories": [
+      "Mistranslation",
+      "Accuracy"
+    ]
+  },
+  "seg-0107": {
+    "segmentId": "seg-0107",
+    "originalTarget": "The environment variables have been set.",
+    "improvedTarget": "The environment variables have been set. (revised)",
+    "rationale": "The idiomatic expression was translated too literally; the suggested version uses a natural English equivalent.",
+    "errorCategories": [
+      "Accuracy"
+    ]
+  },
+  "seg-0108": {
+    "segmentId": "seg-0108",
+    "originalTarget": "The branch was merged successfully.",
+    "improvedTarget": "The branch was merged successfully. (revised for clarity)",
+    "rationale": "Word order in the subordinate clause does not follow English convention.",
+    "errorCategories": [
+      "Mistranslation"
+    ]
+  },
+  "seg-0109": {
+    "segmentId": "seg-0109",
+    "originalTarget": "The pull request review is complete.",
+    "improvedTarget": "The pull request review is complete. (revised)",
+    "rationale": "Terminology mismatch: 'configuration' should be used instead of 'settings' for consistency with the glossary.",
+    "errorCategories": [
+      "Accuracy",
+      "Terminology"
+    ]
+  },
+  "seg-0110": {
+    "segmentId": "seg-0110",
+    "originalTarget": "The module was imported successfully.",
+    "improvedTarget": "The module was imported successfully. (revised for clarity)",
+    "rationale": "The idiomatic expression was translated too literally; the suggested version uses a natural English equivalent.",
+    "errorCategories": [
+      "Fluency",
+      "Mistranslation"
+    ]
+  },
+  "seg-0111": {
+    "segmentId": "seg-0111",
+    "originalTarget": "The dependencies have been updated.",
+    "improvedTarget": "The dependencies have been updated. (revised for clarity)",
+    "rationale": "The original translation uses a slightly informal register that doesn't match the source document's formal tone.",
+    "errorCategories": [
+      "Accuracy"
+    ]
+  },
+  "seg-0112": {
+    "segmentId": "seg-0112",
+    "originalTarget": "The compilation process has failed.",
+    "improvedTarget": "The compilation process has failed. (revised for clarity)",
+    "rationale": "The idiomatic expression was translated too literally; the suggested version uses a natural English equivalent.",
+    "errorCategories": [
+      "Accuracy",
+      "Mistranslation"
+    ]
+  },
+  "seg-0113": {
+    "segmentId": "seg-0113",
+    "originalTarget": "The interface has been implemented correctly.",
+    "improvedTarget": "The interface has been implemented correctly. (revised)",
+    "rationale": "Passive voice was incorrectly rendered; the active construction is preferred in English.",
+    "errorCategories": [
+      "Fluency"
+    ]
+  },
+  "seg-0114": {
+    "segmentId": "seg-0114",
+    "originalTarget": "The repository has been cloned.",
+    "improvedTarget": "The repository has been cloned. (revised for clarity)",
+    "rationale": "The noun phrase structure was restructured to improve readability for native English speakers.",
+    "errorCategories": [
+      "Fluency",
+      "Accuracy"
+    ]
+  },
+  "seg-0115": {
+    "segmentId": "seg-0115",
+    "originalTarget": "The documentation has been generated.",
+    "improvedTarget": "The documentation has been generated. (revised for clarity)",
+    "rationale": "The term 'completed' is more precise than 'finished' in this technical context.",
+    "errorCategories": [
+      "Fluency",
+      "Accuracy",
+      "Mistranslation"
+    ]
+  },
+  "seg-0116": {
+    "segmentId": "seg-0116",
+    "originalTarget": "The type was inferred correctly.",
+    "improvedTarget": "The type was inferred correctly. (revised for clarity)",
+    "rationale": "Word order in the subordinate clause does not follow English convention.",
+    "errorCategories": [
+      "Fluency"
+    ]
+  },
+  "seg-0117": {
+    "segmentId": "seg-0117",
+    "originalTarget": "The function returns the expected value.",
+    "improvedTarget": "The function returns the expected value. (revised)",
+    "rationale": "The present perfect tense is more appropriate here than the simple past.",
+    "errorCategories": [
+      "Fluency"
+    ]
+  },
+  "seg-0118": {
+    "segmentId": "seg-0118",
+    "originalTarget": "The hook has been registered.",
+    "improvedTarget": "The hook has been registered. (revised for clarity)",
+    "rationale": "The original translation uses a slightly informal register that doesn't match the source document's formal tone.",
+    "errorCategories": [
+      "Mistranslation",
+      "Terminology"
+    ]
+  },
+  "seg-0119": {
+    "segmentId": "seg-0119",
+    "originalTarget": "The middleware has been activated.",
+    "improvedTarget": "The middleware has been activated. (revised for clarity)",
+    "rationale": "The idiomatic expression was translated too literally; the suggested version uses a natural English equivalent.",
+    "errorCategories": [
+      "Fluency"
+    ]
+  },
+  "seg-0120": {
+    "segmentId": "seg-0120",
+    "originalTarget": "The event handler was triggered.",
+    "improvedTarget": "The event handler was triggered. (revised for clarity)",
+    "rationale": "Word order in the subordinate clause does not follow English convention.",
+    "errorCategories": [
+      "Accuracy"
+    ]
+  },
+  "seg-0121": {
+    "segmentId": "seg-0121",
+    "originalTarget": "",
+    "improvedTarget": "No target text available for AI improvement.",
+    "rationale": "The modal verb 'should' carries a softer obligation than the German 'muss'; 'must' is the correct mapping.",
+    "errorCategories": [
+      "Fluency"
+    ]
+  },
+  "seg-0122": {
+    "segmentId": "seg-0122",
+    "originalTarget": "This orphaned segment was found on page 4.",
+    "improvedTarget": "This orphaned segment was found on page 4. (revised)",
+    "rationale": "Passive voice was incorrectly rendered; the active construction is preferred in English.",
+    "errorCategories": [
+      "Mistranslation",
+      "Fluency"
+    ]
+  },
+  "seg-0123": {
+    "segmentId": "seg-0123",
+    "originalTarget": "A completely unrelated English string regarding software menus.",
+    "improvedTarget": "A completely unrelated English string regarding software menus. (revised)",
+    "rationale": "The original translation uses a slightly informal register that doesn't match the source document's formal tone.",
+    "errorCategories": [
+      "Accuracy"
+    ]
+  },
+  "seg-0124": {
+    "segmentId": "seg-0124",
+    "originalTarget": "Another nonsensical unrelated English string about user interfaces.",
+    "improvedTarget": "Another nonsensical unrelated English string about user interfaces. (revised)",
+    "rationale": "The idiomatic expression was translated too literally; the suggested version uses a natural English equivalent.",
+    "errorCategories": [
+      "Mistranslation"
+    ]
+  },
+  "seg-0125": {
+    "segmentId": "seg-0125",
+    "originalTarget": "A third irrelevant English string concerning design principles.",
+    "improvedTarget": "A third irrelevant English string concerning design principles. (revised)",
+    "rationale": "The original translation uses a slightly informal register that doesn't match the source document's formal tone.",
+    "errorCategories": [
+      "Fluency",
+      "Accuracy"
+    ]
+  },
+  "seg-0126": {
+    "segmentId": "seg-0126",
+    "originalTarget": "This sentence refers to the correct use of technical terms.",
+    "improvedTarget": "This sentence refers to the correct use of technical terms. (revised)",
+    "rationale": "Word order in the subordinate clause does not follow English convention.",
+    "errorCategories": [
+      "Accuracy",
+      "Fluency"
+    ]
+  },
+  "seg-0127": {
+    "segmentId": "seg-0127",
+    "originalTarget": "Something completely different in the target document.",
+    "improvedTarget": "Something completely different in the target document. (revised)",
+    "rationale": "The indefinite article was omitted before a countable noun.",
+    "errorCategories": [
+      "Fluency"
+    ]
+  }
+}

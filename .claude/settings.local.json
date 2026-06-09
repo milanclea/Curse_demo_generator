@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3002/translation-memories/creator)",
+      "Bash(curl -s http://localhost:3002/api/segments?page=1\\\\&pageSize=5)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(f'total={d[\\\\\"total\\\\\"]}, summary={d[\\\\\"summary\\\\\"]}'\\)\")",
+      "Bash(curl -s http://localhost:3002/translation-memories/creator)",
+      "Bash(python3 -c \"import sys,json; d=json.loads\\(sys.stdin.read\\(\\).split\\('<script>window.__nuxt'\\)[-1].split\\('</script>'\\)[0].lstrip\\('={'\\).rstrip\\('}'\\).replace\\('__nuxt=',''\\).strip\\(\\)\\); print\\(d.get\\('error',''\\)\\)\")",
+      "Bash(curl -s http://localhost:3002/__nuxt_vite_node__/message)",
+      "Bash(curl -v http://localhost:3002/translation-memories/creator)",
+      "Bash(pkill -f \"tm-creator.*nuxt\")",
+      "Read(//tmp/**)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3002/translation-memories)",
+      "Bash(curl -s http://localhost:3002/api/segments?page=1\\\\&pageSize=3)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('total:', d['total'], '| summary:', d['summary']\\)\")",
+      "Bash(curl -s http://localhost:3002/api/segments/seg-0001/ai-suggestion)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('AI seg:', d['segmentId'], '| cats:', d['errorCategories']\\)\")",
+      "Bash(python3 -c \"import sys; html=sys.stdin.read\\(\\); print\\('Has <div id=__nuxt>:', '<div id=\\\\\"__nuxt\\\\\">' in html\\); print\\('Has script tag:', '<script' in html\\); print\\('Bytes:', len\\(html\\)\\)\")",
+      "Bash(curl -s http://localhost:3002/translation-memories)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3002/)",
+      "mcp__Claude_Preview__preview_start"
+    ]
+  }
+}
