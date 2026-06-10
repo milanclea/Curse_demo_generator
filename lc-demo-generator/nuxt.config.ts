@@ -29,10 +29,6 @@ export default defineNuxtConfig({
     authSecret: process.env.AUTH_SECRET || 'lc-demo-secret-change-in-prod',
   },
 
-  nitro: {
-    preset: process.env.NITRO_PRESET || 'node-server',
-  },
-
   app: {
     head: {
       title: 'Language Coach Demo Generator',
